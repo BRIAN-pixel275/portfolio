@@ -3,592 +3,706 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Muchiru - Graphic Designer & Frontend Developer</title>
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Brian Muchiru | Software Developer & Creative Technologist</title>
+    <meta name="description" content="Brian Muchiru is a software developer and creative technologist building modern web experiences, financial technology products and digital solutions.">
+    <meta name="author" content="Brian Muchiru">
+    <meta name="theme-color" content="#08100a">
+
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.jpg" alt="Brian Muchiru Logo">
+    <div class="site-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <nav class="navbar container" aria-label="Primary navigation">
+            <a href="#home" class="brand" aria-label="Brian Muchiru home">
+                <img src="logo.jpg" alt="Brian Muchiru logo">
+                <span>Brian<span class="accent">.</span></span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="main-nav">
+                <ul class="nav-links">
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#portfolio">Projects</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-socials">
+                    <a href="https://github.com/BRIAN-pixel275" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brian-muchiru-b0b057356/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1 class="reveal-scale">
-            Brian Muchiru: Graphic Designer & Frontend Developer
-        </h1>
-        <p class="reveal">Hi, I'm Brian Muchiru, a Graphic Designer, Frontend Developer, and Founder of Kreative Studio. I create modern, user-focused websites and designs that make brands stand out</p>
-        <a href="#portfolio" class="cta-button reveal-bounce">View My Work</a>
-        <a href="#contact" class="cta-button reveal-bounce">Hire Me</a>
-        
-    </section>
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="eyebrow">
+                        <span class="status-dot"></span>
+                        Available for opportunities
+                    </div>
 
-    <section id="about">
-        <img src="me.jpeg" alt="Brian Muchiru" class="reveal-left">
-        <div class="content">
-            <h2 class="reveal-right">About Me</h2>
-            <p class="reveal">I'm passionate about blending creativity and technology to deliver designs and websites that stand out. At Kreative Studio, I help clients bring their ideas to life through visually striking, functional digital experiences.</p>
-            <h3 class="skills-h3 reveal">Skills</h3>
-            <ul class="skills-list reveal">
-                <li>Graphic Design (Photoshop, Canva)</li>
-                <li>Frontend Development (HTML, CSS, JavaScript)</li>
-            </ul>
-        </div>
-    </section>
+                    <p class="hero-kicker">HELLO, I'M BRIAN MUCHIRU</p>
 
-    <section id="portfolio">
-        <h2 class="reveal-scale">Portfolio</h2>
-        
-        <div class="portfolio-section design-work">
-            <h3 class="reveal"> Design Work</h3>
-            <div class="portfolio-grid">
-                <div class="portfolio-item reveal">
-                    <img src="brand 1.jpg" alt="Poster Design">
-                    <h4>My Services</h4>
-                    <p>Bringing ideas to life with a touch of creativity.</p>
-                    <a href="#">View Full Image</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="photizoo.jpg" alt="Logo Design">
-                    <h4>Event Poster</h4>
-                    <p> A visually captivating event poster.</p>
-                    <a href="#">View Full Image</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="SWEM.jpg" alt="Social Media Graphics">
-                    <h4>Bible Study Poster</h4>
-                    <p> A vibrant and inviting poster. </p>
-                    <a href="#">View Full Image</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="portfolio-section">
-            <h3 class="reveal"> Web Projects</h3>
-            <div class="portfolio-grid">
-                <div class="portfolio-item reveal">
-                    <img src="e-commerce .png" alt="E-commerce Website">
-                    <h4>E-commerce Site</h4>
-                    <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://turbotalesimports.netlify.app/" target="_blank">Live Demo</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="portfolio .png" alt="Portfolio Website">
-                    <h4>Personal Portfolio</h4>
-                    <p>A clean and modern portfolio website showcasing design work.</p>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="blog.png" alt="Blog Website">
-                    <h4>Blog Platform</h4>
-                    <p>A simple blog website with dynamic content loading.</p>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <h1>
+                        I BUILD DIGITAL
+                        <span>PRODUCTS THAT</span>
+                        <span class="accent">MAKE AN IMPACT.</span>
+                    </h1>
 
-    <section id="skills">
-        <h2 class="reveal-scale">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item reveal">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 95%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 55%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>Canva</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>Photoshop</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <p class="hero-description">
+                        Software developer and creative technologist combining code, design and problem-solving
+                        to build modern websites, digital products and practical solutions.
+                    </p>
 
-    <section id="contact">
-        <h2 class="reveal-scale">Contact Me</h2>
-        <div data-fs-success class="form-success reveal" style="display: none; color: #FFD700; background: rgba(255, 215, 0, 0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-            Thanks for your message! I'll get back to you soon.
-        </div>
-        <div data-fs-error class="form-error reveal" style="display: none; color: #ff6b6b; background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px;"></div>
-        
-        <form id="contact-form" class="reveal">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" data-fs-field required>
-                <span data-fs-error="name" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" data-fs-field required>
-                <input type="text" name="_gotcha" style="display:none">
-                <span data-fs-error="email" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" data-fs-field required></textarea>
-                <span data-fs-error="message" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <button type="submit" data-fs-submit-btn>Send Message</button>
-        </form>
-        <div class="social-links">
-            <a href="https://github.com/BRIAN-pixel275" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/just_muchiru/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/brian-muchiru-b0b057356/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </section>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary">
+                            View My Work <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Let's Connect
+                        </a>
+                    </div>
 
-    <footer>
-        <p>&copy; 2026 Kreative Studio. All rights reserved.</p>
+                    <div class="hero-meta">
+                        <span><i class="fa-solid fa-location-dot"></i> Kenya</span>
+                        <span><i class="fa-solid fa-code"></i> Building with code</span>
+                        <span><i class="fa-solid fa-pen-nib"></i> Designing with purpose</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-scale">
+                    <div class="code-card">
+                        <div class="code-window">
+                            <div class="window-bar">
+                                <div class="window-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="window-title">brian@portfolio ~</span>
+                            </div>
+
+                            <div class="code-body">
+                                <p><span class="code-muted">$</span> whoami</p>
+                                <p class="code-output">Brian Muchiru</p>
+
+                                <p><span class="code-muted">$</span> role</p>
+                                <p class="code-output">Software Developer</p>
+
+                                <p><span class="code-muted">$</span> stack</p>
+                                <div class="code-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Java</span>
+                                    <span>Supabase</span>
+                                </div>
+
+                                <p><span class="code-muted">$</span> status</p>
+                                <p class="code-status"><span class="status-dot"></span> Building</p>
+                                <span class="terminal-cursor"></span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-one">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Clean code</span>
+                        </div>
+
+                        <div class="floating-badge badge-two">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Ideas → products</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </section>
+
+        <!-- STACK -->
+        <section class="stack-strip" aria-label="Technology stack">
+            <div class="container">
+                <div class="stack-heading">CURRENTLY BUILDING WITH</div>
+                <div class="stack-list">
+                    <span><i class="fa-brands fa-html5"></i> HTML5</span>
+                    <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                    <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                    <span><i class="fa-brands fa-java"></i> Java</span>
+                    <span><i class="fa-solid fa-database"></i> Supabase</span>
+                    <span><i class="fa-brands fa-git-alt"></i> Git</span>
+                    <span><i class="fa-brands fa-github"></i> GitHub</span>
+                    <span><i class="fa-solid fa-cloud"></i> Vercel / Netlify</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">01 / ABOUT</p>
+                    <h2>More than just <span class="accent">code.</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-wrap reveal-left">
+                        <div class="about-image-frame">
+                            <img src="me.jpeg" alt="Brian Muchiru" class="about-image">
+                        </div>
+                        <div class="image-caption">
+                            <span>Brian Muchiru</span>
+                            <span>Developer · Designer · Builder</span>
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal-right">
+                        <p class="lead">
+                            I enjoy turning ideas into useful digital experiences.
+                        </p>
+
+                        <p>
+                            I'm a software developer and creative technologist with a strong interest in
+                            frontend development, financial technology and digital design. I enjoy working
+                            across the gap between an idea and a finished product.
+                        </p>
+
+                        <p>
+                            My work ranges from responsive websites and financial management tools to
+                            early-stage product concepts and visual design. I also run <strong>Kreative Studio</strong>,
+                            where technology and creativity come together to help people and organizations present
+                            their ideas professionally.
+                        </p>
+
+                        <div class="about-facts">
+                            <div>
+                                <strong>Focus</strong>
+                                <span>Web & product development</span>
+                            </div>
+                            <div>
+                                <strong>Approach</strong>
+                                <span>Learn → Build → Improve</span>
+                            </div>
+                            <div>
+                                <strong>Based</strong>
+                                <span>Kenya</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="text-link">
+                            Let's build something useful <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="portfolio" class="section projects-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">02 / SELECTED WORK</p>
+                    <h2>Things I've <span class="accent">built.</span></h2>
+                    <p class="section-intro">
+                        A mix of client work, personal products, financial technology ideas and creative projects.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Elevara -->
+                    <article class="project-card project-featured reveal">
+                        <div class="project-number">01</div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span class="project-type">CLIENT WEBSITE</span>
+                                <span class="project-status"><span class="status-dot"></span> Live</span>
+                            </div>
+                            <h3>Elevara Legacy</h3>
+                            <p>
+                                A modern digital platform for a women-focused organization, presenting its mission,
+                                programs, community work, events and stories in a polished responsive experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Supabase</span>
+                                <span>Netlify</span>
+                            </div>
+                            <a href="https://elevaralegacy.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View live project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                    </article>
+
+                    <!-- FinnanceClub -->
+                    <article class="project-card reveal">
+                        <div class="project-number">02</div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span class="project-type">FINTECH / PWA</span>
+                                <span class="project-status">Building</span>
+                            </div>
+                            <h3>FinnanceClub</h3>
+                            <p>
+                                A financial management platform focused on tracking transactions, balances,
+                                users and financial records for an organization.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Supabase</span>
+                                <span>PWA</span>
+                            </div>
+                            <a href="https://finnanceclub.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Open dashboard <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                    </article>
+
+                    <!-- CreditScore Africa -->
+                    <article class="project-card reveal">
+                        <div class="project-number">03</div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span class="project-type">FINTECH / PRODUCT</span>
+                                <span class="project-status">MVP</span>
+                            </div>
+                            <h3>CreditScore Africa</h3>
+                            <p>
+                                An alternative credit-scoring platform concept for Kenyan SMEs, designed to help
+                                lenders make better-informed decisions using business and financial activity.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Supabase</span>
+                                <span>FinTech</span>
+                            </div>
+                            <a href="#contact" class="project-link">
+                                Discuss the project <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                    </article>
+
+                    <!-- TurboTales -->
+                    <article class="project-card project-image-card reveal">
+                        <div class="project-image">
+                            <img src="e-commerce .png" alt="TurboTales Imports e-commerce website">
+                            <div class="project-overlay">
+                                <a href="https://turbotalesimports.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open TurboTales Imports">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span class="project-type">E-COMMERCE</span>
+                            </div>
+                            <h3>TurboTales Imports</h3>
+                            <p>A responsive e-commerce experience built with a focus on clean presentation and usability.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://turbotalesimports.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                Live website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Kreative Studio -->
+                    <article class="project-card project-image-card reveal">
+                        <div class="project-image">
+                            <img src="brand 1.jpg" alt="Kreative Studio design work">
+                            <div class="project-overlay">
+                                <button type="button" class="lightbox-trigger" aria-label="View Kreative Studio design">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-topline">
+                                <span class="project-type">CREATIVE STUDIO</span>
+                            </div>
+                            <h3>Kreative Studio</h3>
+                            <p>Creative design work combining visual communication, branding and digital experiences.</p>
+                            <div class="project-tech">
+                                <span>Canva</span>
+                                <span>Photoshop</span>
+                                <span>Branding</span>
+                                <span>Design</span>
+                            </div>
+                            <a href="#contact" class="project-link">
+                                Work with me <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-note reveal">
+                    <span>More projects are being built.</span>
+                    <a href="https://github.com/BRIAN-pixel275" target="_blank" rel="noopener noreferrer">
+                        Explore my GitHub <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT I DO -->
+        <section class="section services-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">03 / WHAT I DO</p>
+                    <h2>Turning ideas into <span class="accent">digital experiences.</span></h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+                        <span class="service-number">01</span>
+                        <h3>Web Development</h3>
+                        <p>
+                            Responsive websites and web experiences built with clean HTML, CSS and JavaScript.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <span class="service-number">02</span>
+                        <h3>Product Development</h3>
+                        <p>
+                            Turning ideas into practical digital products, dashboards and early-stage MVPs.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-icon"><i class="fa-solid fa-pen-nib"></i></span>
+                        <span class="service-number">03</span>
+                        <h3>UI & Visual Design</h3>
+                        <p>
+                            Interfaces, social graphics and visual identities designed to communicate clearly.
+                        </p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-icon"><i class="fa-solid fa-chart-pie"></i></span>
+                        <span class="service-number">04</span>
+                        <h3>FinTech Solutions</h3>
+                        <p>
+                            Exploring technology-driven financial tools for organizations, SMEs and communities.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="section-label">04 / SKILLS & TOOLS</p>
+                    <h2>The tools I use to <span class="accent">build.</span></h2>
+                </div>
+
+                <div class="skills-layout">
+                    <div class="skills-intro reveal-left">
+                        <p class="lead">
+                            I'm continuously learning, building and improving.
+                        </p>
+                        <p>
+                            My current toolkit spans frontend development, programming, backend services,
+                            deployment and visual design. I care more about building useful things than
+                            collecting technologies.
+                        </p>
+
+                        <div class="learning-card">
+                            <span class="learning-icon"><i class="fa-solid fa-rocket"></i></span>
+                            <div>
+                                <strong>Currently growing</strong>
+                                <span>Java · Backend development · FinTech · Product thinking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-cloud reveal-right">
+                        <span class="skill-pill featured"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-pill featured"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-pill featured"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-pill"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-pill"><i class="fa-solid fa-database"></i> Supabase</span>
+                        <span class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-pill"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-pill"><i class="fa-solid fa-cloud"></i> Vercel</span>
+                        <span class="skill-pill"><i class="fa-solid fa-globe"></i> Netlify</span>
+                        <span class="skill-pill"><i class="fa-palette"></i> Canva</span>
+                        <span class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Photoshop</span>
+                        <span class="skill-pill"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Design</span>
+                        <span class="skill-pill"><i class="fa-solid fa-object-group"></i> UI/UX</span>
+                        <span class="skill-pill"><i class="fa-solid fa-database"></i> Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-copy">
+                        <p class="section-label">05 / LET'S CONNECT</p>
+                        <h2>Have an idea?<br><span class="accent">Let's build it.</span></h2>
+                        <p>
+                            Whether you need a website, a digital product, a design or simply want to talk
+                            through an idea, I'd love to hear from you.
+                        </p>
+
+                        <div class="contact-links">
+                            <a href="https://www.linkedin.com/in/brian-muchiru-b0b057356/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/BRIAN-pixel275" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.instagram.com/just_muchiru/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrap">
+                        <div data-fs-success class="form-success" style="display:none;">
+                            Thanks for your message! I'll get back to you soon.
+                        </div>
+
+                        <div data-fs-error class="form-error" style="display:none;"></div>
+
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" data-fs-field autocomplete="name" required>
+                                    <span data-fs-error="name" class="field-error"></span>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" data-fs-field autocomplete="email" required>
+                                    <span data-fs-error="email" class="field-error"></span>
+                                </div>
+                            </div>
+
+                            <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off">
+
+                            <div class="form-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" data-fs-field required></textarea>
+                                <span data-fs-error="message" class="field-error"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit" data-fs-submit-btn>
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="#home" class="brand footer-brand">
+                <img src="logo.jpg" alt="Brian Muchiru logo">
+                <span>Brian<span class="accent">.</span></span>
+            </a>
+
+            <p>&copy; 2026 Brian Muchiru. Built with HTML, CSS & JavaScript.</p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/BRIAN-pixel275" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/brian-muchiru-b0b057356/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Image Modal/Lightbox -->
-    <div id="imageModal" class="modal">
-        <span class="close-modal" aria-label="Close modal">&times;</span>
-        <img class="modal-content" id="modalImage" alt="Full size image">
-        <div id="modalCaption"></div>
+    <!-- LIGHTBOX -->
+    <div id="imageModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview">
+        <button class="close-modal" type="button" aria-label="Close image preview">&times;</button>
+        <div class="modal-inner">
+            <img class="modal-content" id="modalImage" alt="Design preview">
+            <p id="modalCaption"></p>
+        </div>
     </div>
 
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/254787326993"
+       class="whatsapp-button"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contact Brian on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with me</span>
+    </a>
+
     <script>
-        // Smooth scrolling for navigation links
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.querySelector(".site-header");
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navMenu = document.querySelector(".nav-menu");
+            const navLinks = document.querySelectorAll(".nav-link");
+            const sections = document.querySelectorAll("main section[id]");
+            const revealElements = document.querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-scale");
 
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    if (targetSection) {
-                        const headerHeight = document.querySelector('header').offsetHeight;
-                        const targetPosition = targetSection.offsetTop - headerHeight - 20; // 20px extra padding
-
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
+            // Mobile navigation
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener("click", () => {
+                    const isOpen = navMenu.classList.toggle("open");
+                    menuToggle.classList.toggle("open", isOpen);
+                    menuToggle.setAttribute("aria-expanded", isOpen);
+                    document.body.classList.toggle("menu-open", isOpen);
                 });
-            });
 
-            // Scroll-triggered reveal animations
-            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-bounce');
-
-            function checkReveal() {
-                const windowHeight = window.innerHeight;
-                const revealPoint = 150; // Trigger animation 150px before element enters viewport
-
-                revealElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-
-                    if (elementTop < windowHeight - revealPoint) {
-                        element.classList.add('revealed');
-                    }
+                navLinks.forEach(link => {
+                    link.addEventListener("click", () => {
+                        navMenu.classList.remove("open");
+                        menuToggle.classList.remove("open");
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        document.body.classList.remove("menu-open");
+                    });
                 });
             }
 
-            // Check reveals on load and scroll
-            window.addEventListener('scroll', checkReveal);
-            checkReveal(); // Check on initial load
+            // Header state
+            const updateHeader = () => {
+                header.classList.toggle("scrolled", window.scrollY > 20);
+            };
 
-            // Also trigger reveals when smooth scrolling to sections
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    setTimeout(checkReveal, 500); // Check reveals after smooth scroll completes
-                });
-            });
+            window.addEventListener("scroll", updateHeader, { passive: true });
+            updateHeader();
 
-            // Image Modal/Lightbox functionality
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const modalCaption = document.getElementById('modalCaption');
-            const closeBtn = document.getElementsByClassName('close-modal')[0];
-
-            // Get all "View Full Image" links in design work section
-            const viewImageLinks = document.querySelectorAll('.design-work .portfolio-item a');
-
-            viewImageLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const portfolioItem = this.closest('.portfolio-item');
-                    const img = portfolioItem.querySelector('img');
-                    const title = portfolioItem.querySelector('h4').textContent;
-                    const description = portfolioItem.querySelector('p').textContent;
-
-                    modal.style.display = 'block';
-                    modalImg.src = img.src;
-                    modalImg.alt = img.alt;
-                    modalCaption.textContent = `${title} - ${description}`;
-
-                    // Prevent body scroll when modal is open
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-
-            // Close modal when clicking the close button
-            closeBtn.addEventListener('click', function() {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            });
-
-            // Close modal when clicking outside the image
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-
-            // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.style.display === 'block') {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
-
-            // Formspree AJAX Form Integration
-            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-            formspree('initForm', { formElement: '#contact-form', formId: 'mdaplgqe' });
-        });
-      
-    </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/254787326993" class="whatsapp-button" target="_blank" aria-label="Contact via WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brian Muchiru - Graphic Designer & Frontend Developer</title>
-    <link rel="icon" type="image/x-icon" href="logo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.jpg" alt="Brian Muchiru Logo">
-            </div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1 class="reveal-scale">
-            Brian Muchiru: Graphic Designer & Frontend Developer
-        </h1>
-        <p class="reveal">Hi, I'm Brian Muchiru, a Graphic Designer, Frontend Developer, and Founder of Kreative Studio. I create modern, user-focused websites and designs that make brands stand out</p>
-        <a href="#portfolio" class="cta-button reveal-bounce">View My Work</a>
-        <a href="#contact" class="cta-button reveal-bounce">Hire Me</a>
-        
-    </section>
-
-    <section id="about">
-        <img src="me.jpeg" alt="Brian Muchiru" class="reveal-left">
-        <div class="content">
-            <h2 class="reveal-right">About Me</h2>
-            <p class="reveal">I'm passionate about blending creativity and technology to deliver designs and websites that stand out. At Kreative Studio, I help clients bring their ideas to life through visually striking, functional digital experiences.</p>
-            <h3 class="skills-h3 reveal">Skills</h3>
-            <ul class="skills-list reveal">
-                <li>Graphic Design (Photoshop, Canva)</li>
-                <li>Frontend Development (HTML, CSS, JavaScript)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h2 class="reveal-scale">Portfolio</h2>
-        
-        <div class="portfolio-section design-work">
-            <h3 class="reveal"> Design Work</h3>
-            <div class="portfolio-grid">
-                <div class="portfolio-item reveal">
-                    <img src="brand 1.jpg" alt="Poster Design">
-                    <h4>My Services</h4>
-                    <p>Bringing ideas to life with a touch of creativity.</p>
-                    <a href="#">View Full Image</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="photizoo.jpg" alt="Logo Design">
-                    <h4>Event Poster</h4>
-                    <p> A visually captivating event poster.</p>
-                    <a href="#">View Full Image</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="SWEM.jpg" alt="Social Media Graphics">
-                    <h4>Bible Study Poster</h4>
-                    <p> A vibrant and inviting poster. </p>
-                    <a href="#">View Full Image</a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="portfolio-section">
-            <h3 class="reveal"> Web Projects</h3>
-            <div class="portfolio-grid">
-                <div class="portfolio-item reveal">
-                    <img src="e-commerce .png" alt="E-commerce Website">
-                    <h4>E-commerce Site</h4>
-                    <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
-                    <a href="https://turbotalesimports.netlify.app/" target="_blank">Live Demo</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="portfolio .png" alt="Portfolio Website">
-                    <h4>Personal Portfolio</h4>
-                    <p>A clean and modern portfolio website showcasing design work.</p>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-                <div class="portfolio-item reveal">
-                    <img src="blog.png" alt="Blog Website">
-                    <h4>Blog Platform</h4>
-                    <p>A simple blog website with dynamic content loading.</p>
-                    <a href="#" target="_blank">Live Demo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2 class="reveal-scale">Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item reveal">
-                <h3>HTML</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 95%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>CSS</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 55%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>Canva</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-            </div>
-            <div class="skill-item reveal">
-                <h3>Photoshop</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2 class="reveal-scale">Contact Me</h2>
-        <div data-fs-success class="form-success reveal" style="display: none; color: #FFD700; background: rgba(255, 215, 0, 0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-            Thanks for your message! I'll get back to you soon.
-        </div>
-        <div data-fs-error class="form-error reveal" style="display: none; color: #ff6b6b; background: rgba(255, 107, 107, 0.1); padding: 15px; border-radius: 5px; margin-bottom: 20px;"></div>
-        
-        <form id="contact-form" class="reveal">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" data-fs-field required>
-                <span data-fs-error="name" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" data-fs-field required>
-                <input type="text" name="_gotcha" style="display:none">
-                <span data-fs-error="email" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" data-fs-field required></textarea>
-                <span data-fs-error="message" style="color: #ff6b6b; font-size: 0.9rem; display: block; margin-top: 5px;"></span>
-            </div>
-            <button type="submit" data-fs-submit-btn>Send Message</button>
-        </form>
-        <div class="social-links">
-            <a href="https://github.com/BRIAN-pixel275" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/just_muchiru/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/brian-muchiru-b0b057356/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Kreative Studio. All rights reserved.</p>
-    </footer>
-
-    <!-- Image Modal/Lightbox -->
-    <div id="imageModal" class="modal">
-        <span class="close-modal" aria-label="Close modal">&times;</span>
-        <img class="modal-content" id="modalImage" alt="Full size image">
-        <div id="modalCaption"></div>
-    </div>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    if (targetSection) {
-                        const headerHeight = document.querySelector('header').offsetHeight;
-                        const targetPosition = targetSection.offsetTop - headerHeight - 20; // 20px extra padding
-
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
+            // Reveal on scroll
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("revealed");
+                        observer.unobserve(entry.target);
                     }
                 });
-            });
+            }, { threshold: 0.12 });
 
-            // Scroll-triggered reveal animations
-            const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-bounce');
+            revealElements.forEach(element => revealObserver.observe(element));
 
-            function checkReveal() {
-                const windowHeight = window.innerHeight;
-                const revealPoint = 150; // Trigger animation 150px before element enters viewport
-
-                revealElements.forEach(element => {
-                    const elementTop = element.getBoundingClientRect().top;
-
-                    if (elementTop < windowHeight - revealPoint) {
-                        element.classList.add('revealed');
+            // Active navigation
+            const sectionObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => link.classList.remove("active"));
+                        const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                        if (active) active.classList.add("active");
                     }
+                });
+            }, { rootMargin: "-35% 0px -55% 0px" });
+
+            sections.forEach(section => sectionObserver.observe(section));
+
+            // Lightbox
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            const modalCaption = document.getElementById("modalCaption");
+            const closeModal = document.querySelector(".close-modal");
+            const lightboxTrigger = document.querySelector(".lightbox-trigger");
+
+            const openModal = () => {
+                const image = document.querySelector(".project-image-card img");
+                if (!image) return;
+
+                modalImage.src = "brand 1.jpg";
+                modalImage.alt = "Kreative Studio design";
+                modalCaption.textContent = "Kreative Studio — selected design work";
+                modal.classList.add("open");
+                modal.setAttribute("aria-hidden", "false");
+                document.body.style.overflow = "hidden";
+            };
+
+            const closeLightbox = () => {
+                modal.classList.remove("open");
+                modal.setAttribute("aria-hidden", "true");
+                document.body.style.overflow = "";
+            };
+
+            if (lightboxTrigger) lightboxTrigger.addEventListener("click", openModal);
+            if (closeModal) closeModal.addEventListener("click", closeLightbox);
+
+            if (modal) {
+                modal.addEventListener("click", (event) => {
+                    if (event.target === modal) closeLightbox();
                 });
             }
 
-            // Check reveals on load and scroll
-            window.addEventListener('scroll', checkReveal);
-            checkReveal(); // Check on initial load
-
-            // Also trigger reveals when smooth scrolling to sections
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    setTimeout(checkReveal, 500); // Check reveals after smooth scroll completes
-                });
-            });
-
-            // Image Modal/Lightbox functionality
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const modalCaption = document.getElementById('modalCaption');
-            const closeBtn = document.getElementsByClassName('close-modal')[0];
-
-            // Get all "View Full Image" links in design work section
-            const viewImageLinks = document.querySelectorAll('.design-work .portfolio-item a');
-
-            viewImageLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const portfolioItem = this.closest('.portfolio-item');
-                    const img = portfolioItem.querySelector('img');
-                    const title = portfolioItem.querySelector('h4').textContent;
-                    const description = portfolioItem.querySelector('p').textContent;
-
-                    modal.style.display = 'block';
-                    modalImg.src = img.src;
-                    modalImg.alt = img.alt;
-                    modalCaption.textContent = `${title} - ${description}`;
-
-                    // Prevent body scroll when modal is open
-                    document.body.style.overflow = 'hidden';
-                });
-            });
-
-            // Close modal when clicking the close button
-            closeBtn.addEventListener('click', function() {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            });
-
-            // Close modal when clicking outside the image
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape" && modal.classList.contains("open")) {
+                    closeLightbox();
                 }
             });
 
-            // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.style.display === 'block') {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
+            // Formspree
+            window.formspree = window.formspree || function () {
+                (formspree.q = formspree.q || []).push(arguments);
+            };
 
-            // Formspree AJAX Form Integration
-            window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-            formspree('initForm', { formElement: '#contact-form', formId: 'mdaplgqe' });
+            formspree("initForm", {
+                formElement: "#contact-form",
+                formId: "mdaplgqe"
+            });
         });
-      
     </script>
-    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/254787326993" class="whatsapp-button" target="_blank" aria-label="Contact via WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
