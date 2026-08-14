@@ -613,36 +613,6 @@ img {
     animation: blink 1s steps(1) infinite;
 }
 
-.floating-badge {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    padding: 10px 13px;
-    border: 1px solid var(--border-strong);
-    border-radius: 12px;
-    background: rgba(13, 18, 14, 0.88);
-    backdrop-filter: blur(14px);
-    color: var(--text);
-    font-size: 0.72rem;
-    font-weight: 600;
-    box-shadow: var(--shadow);
-}
-
-.floating-badge i {
-    color: var(--accent);
-}
-
-.badge-one {
-    top: 40px;
-    right: -20px;
-}
-
-.badge-two {
-    bottom: 35px;
-    left: -30px;
-}
-
 .hero-scroll {
     position: absolute;
     bottom: 27px;
@@ -1654,20 +1624,6 @@ textarea {
     .code-body {
         min-height: 330px;
         padding: 24px;
-    }
-
-    .floating-badge {
-        font-size: 0.65rem;
-    }
-
-    .badge-one {
-        top: 15px;
-        right: -7px;
-    }
-
-    .badge-two {
-        bottom: 18px;
-        left: -8px;
     }
 
     .section-heading {
