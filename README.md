@@ -6,7 +6,7 @@
 
 ## 🌐 Live Portfolio
 
-**Portfolio:** https://brianmuchiruportfolio.netlify.app/
+**Portfolio:** https://brianportfolio-eight.vercel.app/
 
 > The portfolio is continuously evolving as I learn, build, and take on new projects.
 
