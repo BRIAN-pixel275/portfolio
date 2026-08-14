@@ -1757,10 +1757,15 @@ textarea {
 .certifications-section .section-heading {
     margin-bottom: 50px;
 }
+.certifications-section .section-heading h2 {
+    max-width: 750px;
+}
 
 .certifications-grid {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .certification-card {
@@ -1926,4 +1931,28 @@ textarea {
         width: 100%;
         justify-content: center;
     }
+}
+/* ==================== CERTIFICATION ALIGNMENT ==================== */
+
+.certifications-section .section-container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.certifications-section .section-heading {
+    width: 100%;
+    text-align: left;
+}
+
+.certifications-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certification-card {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
 }
