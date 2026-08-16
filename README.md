@@ -81,7 +81,7 @@ A modern website created for **Elevara Legacy**, an organization focused on empo
 
 **Technologies:**
 
-`react` `Tailwind.css` `JavaScript`
+`React` `Vite` `React Router DOM` `CSS3` `Lucide React Icons` `React Icons`
 
 ---
 
